@@ -1,0 +1,29 @@
+body {
+  background: #eee;
+  text-align: center;
+}
+
+#mole_game {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#mole_game .mole {
+  display: flex;
+  width: 130px;
+  height: 130px;
+  background: #cecece;
+  border-radius: 50%;
+}
+
+#mole_game .mole .target {
+  display: block;
+  height: 120px;
+  width: 120px;
+  margin: auto;
+  background: url('../img/goblin.png');
+}
