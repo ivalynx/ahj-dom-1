@@ -9,7 +9,7 @@ body {
   height: 300px;
   background: #fff;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 #mole_game .mole {
@@ -20,10 +20,13 @@ body {
   border-radius: 50%;
 }
 
-#mole_game .mole .target {
+#mole_game .mole img, #mole_game .mole span {
   display: block;
   height: 120px;
   width: 120px;
   margin: auto;
+}
+
+#mole_game .mole .target {
   background: url('../img/goblin.png');
 }

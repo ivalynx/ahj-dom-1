@@ -1,7 +1,5 @@
 import drawField from './drawField';
-import addImg from './addImg';
-import moveImg from './moveImg';
+import createImg from './createImg';
 
 drawField();
-addImg();
-moveImg();
+createImg();

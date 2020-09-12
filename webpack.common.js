@@ -15,9 +15,7 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: (resourcePath, context) => {
-                return path.relative(path.dirname(resourcePath), context) + '/';
-              },
+              publicPath: (resourcePath, context) => `${path.relative(path.dirname(resourcePath), context)}/`,
             },
           },
           'css-loader',
