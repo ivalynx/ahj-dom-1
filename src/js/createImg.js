@@ -3,7 +3,7 @@ import toggleImg from './toggleImg';
 
 export default function createImg() {
   const img = document.createElement('img');
-  img.setAttribute('src', './img/goblin.png');
+  img.setAttribute('src', 'src/img/goblin.png');
   img.setAttribute('alt', 'Цель');
   const moles = document.getElementsByClassName('mole');
   const position = generatePosition(moles.length);
