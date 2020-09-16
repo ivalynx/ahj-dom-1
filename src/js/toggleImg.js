@@ -1,13 +1,13 @@
 import generatePosition from './generatePosition';
 
 export default function toggleImg(array, img) {
-  const position = generatePosition(array.length);
-  let imgIndex = null;
+  let previousPositionIndex = null;
   array.forEach((el, index) => {
     if (el.contains(img)) {
-      imgIndex = index;
+      previousPositionIndex = index;
     }
   });
-  array[imgIndex].removeChild(img);
+  const position = generatePosition(array.length, previousPositionIndex);
+  array[previousPositionIndex].removeChild(img);
   array[position].appendChild(img);
 }
